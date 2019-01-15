@@ -19,7 +19,7 @@ Unofficial implimitation of Multi-task learning using uncertainty to weigh losse
 ### Single vs. duble vs. All: Task Result per Epoch
 |Label segmentation   |Instance segmentation|       Depth         |
 |:-------------------:|:-------------------:|:-------------------:|
-|<img src='images/graphs/label.png'>|<img src='images/graphs/instance.png'>|<img src='images/graphs/disp.png'>|
+|<img src='images/graphs/label.png' width="256px">|<img src='images/graphs/instance.png' width="256px">|<img src='images/graphs/disp.png' width="256px">|
 
 
 

@@ -25,18 +25,18 @@ Task Result per Epoch
 
 compression to paper results
 
-|     |   Task Weights      |Label segmentation   |Instance segmentation|       Depth         |
-|-----|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
-|loss |Label Instance Depth |IoU [%]              |RMS error            |RMS error            |
-|Label only|V   X   X|0.4345/43.1|X|X|
-|Instance only|X   V   X|X|3.4128/4.61|X|
-|Depth only|V   X   V|X|X|0.7005/0.783|
-|Unweighted sum of losses|0.333 0.333 0.333|43.6|3.92|0.786|
-|Approx. optimal weights|0.8 0.05 0.15|46.3|3.92|0.799|
-|2 task uncertainty weighting|V   V   X|0.4298/46.5|3.3185/3.73|X|
-|2 task uncertainty weighting|V   X   V|0.432746.2|X|0.7118/0.714|
-|2 task uncertainty weighting|X   V   V|X|3.2853|0.7166/0.744|
-|3 task uncertainty weighting|V   V   V|0.4287/46.6|3.3183/3.91|0.7102/0.702|
+|                            |     |        |      |Label segmentation   |Instance segmentation|       Depth         |
+|----------------------------|:---:|:------:|:----:|:-------------------:|:-------------------:|:-------------------:|
+|loss                        |Label|Instance|Depth |IoU [%]              |RMS error            |RMS error            |
+|Label only                  |V    |X       |X     |0.4345/43.1          |X                    |X                    |
+|Instance only               |X    |V       |X     |X                    |3.4128/4.61          |X                    |
+|Depth only                  |V    |X       |V     |X|X|0.7005/0.783|
+|Unweighted sum of losses    |0.333|0.333   |0.333 |43.6|3.92|0.786|
+|Approx. optimal weights     |0.8  |0.05    |0.15  |46.3|3.92|0.799|
+|2 task uncertainty weighting|V    |V       |X|0.4298/46.5|3.3185/3.73|X|
+|2 task uncertainty weighting|V    |X       |V|0.432746.2|X|0.7118/0.714|
+|2 task uncertainty weighting|X    |V       |V|X|3.2853|0.7166/0.744|
+|3 task uncertainty weighting|V    |V       |V|0.4287/46.6|3.3183/3.91|0.7102/0.702|
 
 
 

@@ -16,10 +16,15 @@ Unofficial implimitation of Multi-task learning using uncertainty to weigh losse
 |<img width="200px" src='inputs/truck_0.png'>|<img src='results/resNet_label_instance_disp/label_truck_0.png' width="200px">|<img src='results/resNet_label_instance_disp/instance_truck_0.png' width="200px">|<img src='results/resNet_label_instance_disp/disp_truck_0.png' width="200px">|
 |<img width="200px" src='inputs/truck_1.png'>|<img src='results/resNet_label_instance_disp/label_truck_1.png' width="200px">|<img src='results/resNet_label_instance_disp/instance_truck_1.png' width="200px">|<img src='results/resNet_label_instance_disp/disp_truck_1.png' width="200px">|
 
-### Single vs. Dual vs. All: Task Result per Epoch
+### Single vs. Dual vs. All
+Task Result per Epoch
 |Label segmentation   |Instance segmentation|       Depth         |
 |:-------------------:|:-------------------:|:-------------------:|
 |<img src='images/graphs/label.png' width="280px">|<img src='images/graphs/instance.png' width="280px">|<img src='images/graphs/disp.png' width="280px">|
+
+compression to paper results
+||   Task Weights      |Label segmentation   |Instance segmentation|       Depth         |
+||:-------------------:|:-------------------:|:-------------------:|:-------------------:|
 
 
 

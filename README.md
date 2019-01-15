@@ -1,2 +1,2 @@
 # Multi-Task Learning project
-unofficial implimitation of Multi-Task Learning Using Uncertainty to Weigh Losses for Scene Geometry and Semantics [[arXiv](https://arxiv.org/abs/1705.07115)].
+Unofficial implimitation of Multi-task learning using uncertainty to weigh losses for scene geometry and semantics [[arXiv](https://arxiv.org/abs/1705.07115)].

@@ -3,3 +3,4 @@ Unofficial implimitation of Multi-task learning using uncertainty to weigh losse
 
 # Results
 |<img src='results/resNet_label_instance_disp/label_Pedestrian_crossing_0.png'>|<img src='results/resNet_label_instance_disp/instance_Pedestrian_crossing_0.png'>|<img src='results/resNet_label_instance_disp/disp_Pedestrian_crossing_0.png'>|
+|---|---|---|

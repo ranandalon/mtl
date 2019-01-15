@@ -31,6 +31,8 @@ compression to paper results
 |Label only|V   X   X|0.4345/43.1|X|X|
 |Instance only|X   V   X|X|3.4128/4.61|X|
 |Depth only|V   X   V|X|X|0.7005/0.783|
+|Unweighted sum of losses|0.333 0.333 0.333|43.6|3.92|0.786|
+|Approx. optimal weights|0.8 0.05 0.15|46.3|3.92|0.799|
 
 
 

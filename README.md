@@ -1,7 +1,6 @@
 # Multi-Task Learning project
 Unofficial implimitation of Multi-task learning using uncertainty to weigh losses for scene geometry and semantics [[arXiv](https://arxiv.org/abs/1705.07115)].
 
-nets [here](https://drive.google.com/drive/folders/1gjhkFlxH0OEsOVD1YFaxrM_fWfpH1eEv?ogsrc=32)
 ## Results
 ### Examples
 |        Input        | Label <br>segmentation  |Instance <br>segmentation|       Depth         |

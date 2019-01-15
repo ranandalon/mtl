@@ -28,10 +28,10 @@ Compression to paper quantitative results
 |                            |     |        |      |Label segmentation   |Instance segmentation|       Depth         |
 |----------------------------|:---:|:------:|:----:|:-------------------:|:-------------------:|:-------------------:|
 |loss                        |Label|Instance|Depth |IoU [%]              |RMS error            |RMS error            |
-|Label only                  |V    |X       |X     |0.4345/ <span style="color:blue"> 43.1 </span>          |X                    |X                    |
-|Instance only               |X    |V       |X     |X                    |3.4128/4.61(paper)          |X                    |
-|Depth only                  |V    |X       |V     |X|X|0.7005/0.783|
-|Unweighted sum of losses    |0.333|0.333   |0.333 |43.6(paper)|3.92(paper)|0.786(paper)|
+|Label only                  |V    |X       |X     |0.4345/43.1(paper)   |X                    |X                    |
+|Instance only               |X    |V       |X     |X                    |3.4128/4.61(paper)   |X                    |
+|Depth only                  |V    |X       |V     |X                    |X                    |0.7005/0.783(paper)  |
+|Unweighted sum of losses    |0.333|0.333   |0.333 |43.6(paper)          |3.92(paper)          |0.786(paper)         |
 |Approx. optimal weights     |0.8  |0.05    |0.15  |46.3(paper)|3.92(paper)|0.799(paper)|
 |2 task uncertainty weighting|V    |V       |X|0.4298/46.5(paper)|3.3185/3.73(paper)|X|
 |2 task uncertainty weighting|V    |X       |V|0.4327/46.2(paper)|X|0.7118/0.714(paper)|

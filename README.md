@@ -39,5 +39,15 @@ compression to paper results
 |2 task uncertainty weighting|X    |V       |V|X|3.2853|0.7166/0.744|
 |3 task uncertainty weighting|V    |V       |V|0.4287/46.6|3.3183/3.91|0.7102/0.702|
 
+## Setup
+
+**Inferene:**<br>
+1. Download the pre-trained network folder [resNet_label_instance_disp](https://drive.google.com/drive/folders/1gjhkFlxH0OEsOVD1YFaxrM_fWfpH1eEv?ogsrc=32) and save it in `trained_nets`.
+2. Download the pre-trained resNet-101 folder [res_net_101_ckpt](https://drive.google.com/drive/folders/1gjhkFlxH0OEsOVD1YFaxrM_fWfpH1eEv?ogsrc=32) and save it in the main project folder.
+3. Put yor wanted input images in `inputs`.
+4. Run `inference.py`.
+4. Your results will be saved in `results`.
+
+
 
 

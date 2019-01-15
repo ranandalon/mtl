@@ -28,7 +28,7 @@ compression to paper results
 |                            |     |        |      |Label segmentation   |Instance segmentation|       Depth         |
 |----------------------------|:---:|:------:|:----:|:-------------------:|:-------------------:|:-------------------:|
 |loss                        |Label|Instance|Depth |IoU [%]              |RMS error            |RMS error            |
-|Label only                  |V    |X       |X     |0.4345/43.1          |X                    |X                    |
+|Label only                  |V    |X       |X     |0.4345/<span style="color:blue">43.1</span>          |X                    |X                    |
 |Instance only               |X    |V       |X     |X                    |3.4128/4.61          |X                    |
 |Depth only                  |V    |X       |V     |X|X|0.7005/0.783|
 |Unweighted sum of losses    |0.333|0.333   |0.333 |43.6|3.92|0.786|

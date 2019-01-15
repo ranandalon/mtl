@@ -27,6 +27,8 @@ compression to paper results
 
 |     |   Task Weights      |Label segmentation   |Instance segmentation|       Depth         |
 |:---:|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
+|loss |Label Instance Depth |IoU [%]              |RMS error            |RMS error            |
+|Label only|V   X   X|0.4345/43.1|X|X
 
 
 

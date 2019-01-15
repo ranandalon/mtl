@@ -4,7 +4,7 @@ Unofficial implimitation of Multi-task learning using uncertainty to weigh losse
 ## Results
 ### Examples
 |        Input        | Label <br>segmentation  |Instance <br>segmentation|       Depth         |
-|---------------------|:-------------------:|:-------------------:|:-------------------:|
+|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
 |<img width="200px" src='inputs/Pedestrian_crossing_0.png'>|<img src='results/resNet_label_instance_disp/label_Pedestrian_crossing_0.png' width="200px">|<img src='results/resNet_label_instance_disp/instance_Pedestrian_crossing_0.png' width="200px">|<img src='results/resNet_label_instance_disp/disp_Pedestrian_crossing_0.png' width="200px">|
 |<img width="200px" src='inputs/Pedestrian_crossing_1.png'>|<img src='results/resNet_label_instance_disp/label_Pedestrian_crossing_1.png' width="200px">|<img src='results/resNet_label_instance_disp/instance_Pedestrian_crossing_1.png' width="200px">|<img src='results/resNet_label_instance_disp/disp_Pedestrian_crossing_1.png' width="200px">|
 |<img width="200px" src='inputs/bicycle_0.png'>|<img src='results/resNet_label_instance_disp/label_bicycle_0.png' width="200px">|<img src='results/resNet_label_instance_disp/instance_bicycle_0.png' width="200px">|<img src='results/resNet_label_instance_disp/disp_bicycle_0.png' width="200px">|
@@ -26,7 +26,7 @@ Task Result per Epoch
 compression to paper results
 
 |     |   Task Weights      |Label segmentation   |Instance segmentation|       Depth         |
-|:---:|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
+|-----|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
 |loss |Label Instance Depth |IoU [%]              |RMS error            |RMS error            |
 |Label only|V   X   X|0.4345/43.1|X|X|
 |Instance only|X   V   X|X|3.4128/4.61|X|

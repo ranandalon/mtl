@@ -18,6 +18,10 @@ The encoder consisets of a fine tuned pre-trained ResNet 101 v1 with the followi
 
 <img src='images/resnet.png'>
 
+### Atrous convolution
+
+<img src='images/atrous_convolution.png'>
+
 ### Decoders
 The decoders consisets of three convolution layers:
 1. 3X3 Conv + ReLU (512 kernels).

@@ -12,12 +12,19 @@ The paper suggest that using Homoscedastic uncertainty can be used as a basis fo
 
 ### Mathematical Formulation
 First the paper defines multi-task likelihoods:<br>
-- For regression tasks, likelihood is defined as a Gaussian with mean given by the model output with an observation noise scalar sigma:<br>
+- For regression tasks, likelihood is defined as a Gaussian with mean given by the model output with an observation noise scalar σ:<br>
 <img src='images/reg_likelihood.PNG'><br>
 - For classification, likelihood is defined as:<br>
 <img src='images/class_likelihood_1.PNG'><br>
 where:<br>
 <img src='images/class_likelihood_0.PNG'><br>
+
+In maximum likelihood inference, we maximise the log likelihood of the model. In regression for example:<br>
+<img src='images/reg_loglikelihood.PNG'><br>
+σ is the model’s observation noise parameter - capturing how much noise we have in the outputs. We then
+maximise the log likelihood with respect to the model parameters W and observation noise parameter σ
+
+
 
 
 ## Architecture

@@ -11,13 +11,13 @@ The naive approach to combining multi objective losses would be to simply perfor
 The paper suggest that using Homoscedastic uncertainty can be used as a basis for weighting losses in a multi-task learning problem and produce supirior results then the naive approach.
 
 ### Mathematical Formulation
-First the paper defines multi-task likelihoods:
+First the paper defines multi-task likelihoods:<br>
 - For regression tasks, likelihood is defined as a Gaussian with mean given by the model output with an observation noise scalar sigma:
-<img src='images/reg_likelihood.PNG'>
+<img src='images/reg_likelihood.PNG'><br>
 - For classification, likelihood is defined as:
-<img src='images/class_likelihood_1.PNG'>
-where:
-<img src='images/class_likelihood_0.PNG'>
+<img src='images/class_likelihood_1.PNG'><br>
+where:<br>
+<img src='images/class_likelihood_0.PNG'><br>
 
 
 ## Architecture

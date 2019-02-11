@@ -6,7 +6,7 @@ Numerous deep learning applications benefit from multi-task learning with multip
 
 ##  Multi Task Learning with Homoscedastic Uncertainty
 The naive approach to combining multi objective losses would be to simply perform a weighted linear sum of the losses for each individual task:
-<img src='images/naive_loss.png'>
+<img src='images/naive_loss.PNG'>
 
 The paper suggest that using Homoscedastic uncertainty can be used as a basis for weighting losses in a multi-task learning problem and produce supirior results then the naive approach.
 

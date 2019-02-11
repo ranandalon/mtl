@@ -29,13 +29,7 @@ Assuming two tasks that follow a Gaussian distributions:<br>
 The loss will be:<br>
 <img src='images/total_loss_h.PNG'><br>
 <img src='images/loss7.PNG'><br>
-
-
-
-
-
-
-
+This means that W and σ are the learned parameters of the network. W are the wights of the network while σ are used to calculate the wights of each task loss and also to regularize this task loss wight.
 
 
 ## Architecture

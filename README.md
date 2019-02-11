@@ -22,7 +22,16 @@ where:<br>
 In maximum likelihood inference, we maximise the log likelihood of the model. In regression for example:<br>
 <img src='images/reg_loglikelihood.PNG'><br>
 σ is the model’s observation noise parameter - capturing how much noise we have in the outputs. We then
-maximise the log likelihood with respect to the model parameters W and observation noise parameter σ
+maximise the log likelihood with respect to the model parameters W and observation noise parameter σ.<br>
+
+Assuming two tasks that follow a Gaussian distributions:<br>
+<img src='images/two_task.PNG'><br>
+The loss will be:<br>
+<img src='images/total_loss_h.PNG'>
+<img src='images/loss7.PNG'><br>
+
+
+
 
 
 

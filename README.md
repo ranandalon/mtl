@@ -12,9 +12,9 @@ The paper suggest that using Homoscedastic uncertainty can be used as a basis fo
 
 ### Mathematical Formulation
 First the paper defines multi-task likelihoods:<br>
-- For regression tasks, likelihood is defined as a Gaussian with mean given by the model output with an observation noise scalar sigma:
+- For regression tasks, likelihood is defined as a Gaussian with mean given by the model output with an observation noise scalar sigma:<br>
 <img src='images/reg_likelihood.PNG'><br>
-- For classification, likelihood is defined as:
+- For classification, likelihood is defined as:<br>
 <img src='images/class_likelihood_1.PNG'><br>
 where:<br>
 <img src='images/class_likelihood_0.PNG'><br>

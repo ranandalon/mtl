@@ -1,5 +1,5 @@
 # Multi-Task Learning project
-Unofficial implimitation of:<br>
+Unofficial implementation of:<br>
 Kendall, Alex, Yarin Gal, and Roberto Cipolla. "Multi-task learning using uncertainty to weigh losses for scene geometry and semantics." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.
 [[arXiv](https://arxiv.org/abs/1705.07115)].
 

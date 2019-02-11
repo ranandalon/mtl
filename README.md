@@ -36,6 +36,8 @@ The loss will be:<br>
 
 
 
+
+
 ## Architecture
 ### Overview
 The network consisets of an encoder which produce a shared representation and  followed by three task-specific decoders:

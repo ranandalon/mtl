@@ -2,7 +2,25 @@
 Unofficial implimitation of Multi-task learning using uncertainty to weigh losses for scene geometry and semantics [[arXiv](https://arxiv.org/abs/1705.07115)].
 
 ## Architecture
+### Overview
+The network consisets of an encoder which produce a shared representation and  followed by three task-specific decoders:
+1. Semantic segmantation Decoder.
+2. Instance segmantation Decoder.
+3. Depth estimation Decoder.
+
 <img src='images/arc_top.png'>
+
+### Encoder
+The encoder consisets of a fine tuned pre-trained ResNet 101 v1 with the following chnges:
+1. Droped the final fully conected layer.
+2. Last layer is resized to 128X256.
+3. used Dilated convolutional approch (atrous convolution).
+
+<img src='images/resnet.png'>
+
+
+
+
 
 
 ## Results

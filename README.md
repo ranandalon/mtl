@@ -1,6 +1,24 @@
 # Multi-Task Learning project
 Unofficial implimitation of Multi-task learning using uncertainty to weigh losses for scene geometry and semantics [[arXiv](https://arxiv.org/abs/1705.07115)].
 
+## Abstract
+Numerous deep learning applications benefit from multi-task learning with multiple regression and classification objectives. In this paper we make the observation that the performance of such systems is strongly dependent on the relative weighting between each task’s loss. Tuning these weights by hand is a difficult and expensive process, making multi-task learning prohibitive in practice. We propose a principled approach to multi-task deep learning which weighs multiple loss functions by considering the homoscedastic uncertainty of each task. This allows us to simultaneously learn various quantities with different units or scales in both classification and regression settings. We demonstrate our model learning per-pixel depth regression, semantic and instance segmentation from a monocular input image. Perhaps surprisingly, we show our model can learn multi-task weightings and outperform separate models trained individually on each task.
+
+##  Multi Task Learning with Homoscedastic Uncertainty
+The naive approach to combining multi objective losses would be to simply perform a weighted linear sum of the losses for each individual task:
+<img src='images/naive_loss.png'>
+
+The paper suggest that using Homoscedastic uncertainty can be used as a basis for weighting losses in a multi-task learning problem and produce supirior results then the naive approach.
+
+### Mathematical Formulation
+First the paper defines multi-task likelihoods:
+1. For regression tasks, likelihood is defined as a Gaussian with mean given by the model output with an observation noise scalar sigma:
+<img src='images/reg_likelihood.PNG'>
+2.  For classification, likelihood is defined as:
+<img src='images/class_likelihood1.PNG'>
+<img src='images/class_likelihood0.PNG'>
+
+
 ## Architecture
 ### Overview
 The network consisets of an encoder which produce a shared representation and  followed by three task-specific decoders:

@@ -1,5 +1,8 @@
 # Multi-Task Learning project
-Unofficial implimitation of Multi-task learning using uncertainty to weigh losses for scene geometry and semantics [[arXiv](https://arxiv.org/abs/1705.07115)].
+Unofficial implimitation of 
+Kendall, Alex, Yarin Gal, and Roberto Cipolla. "Multi-task learning using uncertainty to weigh losses for scene geometry and semantics." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2018.
+[[arXiv](https://arxiv.org/abs/1705.07115)].
+
 
 ## Abstract
 Numerous deep learning applications benefit from multi-task learning with multiple regression and classification objectives. In this paper we make the observation that the performance of such systems is strongly dependent on the relative weighting between each task’s loss. Tuning these weights by hand is a difficult and expensive process, making multi-task learning prohibitive in practice. We propose a principled approach to multi-task deep learning which weighs multiple loss functions by considering the homoscedastic uncertainty of each task. This allows us to simultaneously learn various quantities with different units or scales in both classification and regression settings. We demonstrate our model learning per-pixel depth regression, semantic and instance segmentation from a monocular input image. Perhaps surprisingly, we show our model can learn multi-task weightings and outperform separate models trained individually on each task.
@@ -73,7 +76,7 @@ The decoders consisets of three convolution layers:
 ## Losses
 ### Specific losses
 1. Semantic segmantation loss (<img src='images/l_label.PNG' height="20px">): Cross entropy on softMax per pixel (only on valid pixels).
-2. Instance segmantation loss (<img src='images/l_instance.PNG' height="20px">): Centroid regration using masked L1. For each instance in the GT we calculate a mask of valid pixels and for each pixel in the mask the length (in pixels) from the mask center (for x and for y) - this will be used as the instance segmantation GT. Then for all valid pixels we calculate L1 between the network output and the instance segmantation GT.
+2. Instance segmantation loss (<img src='images/l_instance.PNG' height="20px">): Centroid regression using masked L1. For each instance in the GT we calculate a mask of valid pixels and for each pixel in the mask the length (in pixels) from the mask center (for x and for y) - this will be used as the instance segmantation GT. Then for all valid pixels we calculate L1 between the network output and the instance segmantation GT.
 3. Depth estimation loss (<img src='images/l_disp.PNG' height="20px">): L1 (only on valid pixels).
 
 ### Multi loss
@@ -118,15 +121,15 @@ The instance segmantation decoder produces two channels so that each pixel is a 
 |                            |     |        |      |Label segmentation   |Instance segmentation|       Depth         |
 |----------------------------|:---:|:------:|:----:|:-------------------:|:-------------------:|:-------------------:|
 |loss                        |Label|Instance|Depth |IoU [%]              |RMS error            |RMS error            |
-|Label only                  |V    |X       |X     |0.4345/43.1(paper)   |X                    |X                    |
+|Label only                  |V    |X       |X     |43.45/43.1(paper)    |X                    |X                    |
 |Instance only               |X    |V       |X     |X                    |3.4128/4.61(paper)   |X                    |
 |Depth only                  |V    |X       |V     |X                    |X                    |0.7005/0.783(paper)  |
 |Unweighted sum of losses    |0.333|0.333   |0.333 |43.6(paper)          |3.92(paper)          |0.786(paper)         |
 |Approx. optimal weights     |0.8  |0.05    |0.15  |46.3(paper)|3.92(paper)|0.799(paper)|
-|2 task uncertainty weighting|V    |V       |X|0.4298/46.5(paper)|3.3185/3.73(paper)|X|
-|2 task uncertainty weighting|V    |X       |V|0.4327/46.2(paper)|X|0.7118/0.714(paper)|
+|2 task uncertainty weighting|V    |V       |X|42.98/46.5(paper)|3.3185/3.73(paper)|X|
+|2 task uncertainty weighting|V    |X       |V|43.27/46.2(paper)|X|0.7118/0.714(paper)|
 |2 task uncertainty weighting|X    |V       |V|X|3.2853/3.54(paper)|0.7166/0.744(paper)|
-|3 task uncertainty weighting|V    |V       |V|0.4287/46.6(paper)|3.3183/3.91(paper)|0.7102/0.702(paper)|
+|3 task uncertainty weighting|V    |V       |V|42.87/46.6(paper)|3.3183/3.91(paper)|0.7102/0.702(paper)|
 
 ## Setup
 

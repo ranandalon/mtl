@@ -39,13 +39,13 @@ The decoders consisets of three convolution layers:
 **Depth estimation Decoder:** last layer 1 channel.<br>
 <img src='images/depth_estimation.png' height="100px">
 
-### Losses
-**Specific losses**<br>
+## Losses
+### Specific losses
 1. Semantic segmantation loss (<img src='images/l_label.PNG' height="20px">): Cross entropy on softMax per pixel (only on valid pixels).
 2. Instance segmantation loss (<img src='images/l_instance.PNG' height="20px">): Centroid regration using masked L1. For each instance in the GT we calculate a mask of valid pixels and for each pixel in the mask the length (in pixels) from the mask center (for x and for y) - this will be used as the instance segmantation GT. Then for all valid pixels we calculate L1 between the network output and the instance segmantation GT.
 3. Depth estimation loss (<img src='images/l_disp.PNG' height="20px">): L1 (only on valid pixels).
 
-**Multi loss**<br>
+### Multi loss
 <img src='images/multi_loss.PNG'>
 
 Notice that: <img src='images/sigmas.PNG' height="20px"> are learnable.

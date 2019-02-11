@@ -27,7 +27,7 @@ maximise the log likelihood with respect to the model parameters W and observati
 Assuming two tasks that follow a Gaussian distributions:<br>
 <img src='images/two_task.PNG'><br>
 The loss will be:<br>
-<img src='images/total_loss_h.PNG'>
+<img src='images/total_loss_h.PNG'><br>
 <img src='images/loss7.PNG'><br>
 
 

@@ -16,7 +16,7 @@ First the paper defines multi-task likelihoods:
 <img src='images/reg_likelihood.PNG'>
 2.  For classification, likelihood is defined as:
 <img src='images/class_likelihood_1.PNG'>
-<img src='images/class_likelihood0_.PNG'>
+<img src='images/class_likelihood_0.PNG'>
 
 
 ## Architecture

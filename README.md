@@ -24,9 +24,14 @@ The decoders consisets of three convolution layers:
 2. 1X1 Conv + ReLU (512 kernels).
 3. 1X1 Conv + ReLU (as many kernels as needed for the task).
 
-| | | |
-|:-------------------:|:-------------------:|:-------------------:|
-|<img src='images/semantic_segmantation.png'>|<img src='images/instance_segmantation.png'>|<img src='images/depth_estimation.png'>|
+**Semantic segmantation Decoder:** last layer 34 channels.
+<img src='images/semantic_segmantation.png'>
+
+**Instance segmantation Decoder:** last layer 2 channels.
+<img src='images/instance_segmantation.png'>
+
+**Depth estimation Decoder:** last layer 1 channel.
+<img src='images/depth_estimation.png'>|
 
 
 

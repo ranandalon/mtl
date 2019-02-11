@@ -42,6 +42,7 @@ The decoders consisets of three convolution layers:
 **Multi loss**<br>
 <img src='images/multi_loss.PNG'>
 
+Notice that: <img src='images/sigmas.PNG' height="20px"> are learnable.
 
 
 

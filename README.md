@@ -40,7 +40,7 @@ The decoders consisets of three convolution layers:
 3. Depth estimation loss (disp): L1 (only on valid pixels).
 
 **Multi loss**<br>
-<img src='images/multi_loss.PNG' width="250px">
+<img src='images/multi_loss.PNG'>
 
 
 

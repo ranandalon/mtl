@@ -65,13 +65,13 @@ Notice that: <img src='images/sigmas.PNG' height="20px"> are learnable.
 |<img width="200px" src='inputs/truck_1.png'>|<img src='results/resNet_label_instance_disp/label_truck_1.png' width="200px">|<img src='results/resNet_label_instance_disp/instance_truck_1.png' width="200px">|<img src='results/resNet_label_instance_disp/disp_truck_1.png' width="200px">|
 
 ### Single vs. Dual vs. All
-Task quantitative result per epoch
+**Task quantitative result per epoch**<br>
 
 |Label segmentation   |Instance segmentation|       Depth         |
 |:-------------------:|:-------------------:|:-------------------:|
 |<img src='images/graphs/label.png' width="280px">|<img src='images/graphs/instance.png' width="280px">|<img src='images/graphs/disp.png' width="280px">|
 
-Compression to paper quantitative results
+**Compression to paper quantitative results** <br>
 
 |                            |     |        |      |Label segmentation   |Instance segmentation|       Depth         |
 |----------------------------|:---:|:------:|:----:|:-------------------:|:-------------------:|:-------------------:|

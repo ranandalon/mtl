@@ -18,6 +18,17 @@ The encoder consisets of a fine tuned pre-trained ResNet 101 v1 with the followi
 
 <img src='images/resnet.png'>
 
+### Decoders
+The decoders consisets of three convolution layers:
+1. 3X3 Conv + ReLU (512 kernels).
+2. 1X1 Conv + ReLU (512 kernels).
+3. 1X1 Conv + ReLU (as many kernels as needed for the task).
+
+| | | |
+|:-------------------:|:-------------------:|:-------------------:|
+|<img src='images/semantic_segmantation.png'>|<img src='images/instance_segmantation.png'>|<img src='images/depth_estimation.png'>|
+
+
 
 
 

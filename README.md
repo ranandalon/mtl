@@ -121,7 +121,7 @@ The instance segmantation decoder produces two channels so that each pixel is a 
 
 |                            |     |        |      |Label segmentation   |Instance segmentation|       Depth         |
 |----------------------------|:---:|:------:|:----:|:-------------------:|:-------------------:|:-------------------:|
-|loss                        |Label|Instance|Depth |IoU [%](ours/*papers*)|RMS error (ours/*papers*)|RMS error (ours/*papers*)|
+|loss                        |Label|Instance|Depth |IoU [%] (ours/*papers*)|RMS error (ours/*papers*)|RMS error (ours/*papers*)|
 |Label only                  |✓    |✗       |✗     |43.45/*43.1*        |✗                   |✗                    |
 |Instance only               |✗    |✓       |✗     |✗                  |3.4128/*4.61*        |✗                    |
 |Depth only                  |✗    |✗       |✓     |✗                  |✗                    |0.7005/*0.783*       |

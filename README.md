@@ -136,14 +136,16 @@ The instance segmantation decoder produces two channels so that each pixel is a 
 Table rows and column explanation: 
 - Rows 4 - 12 show results for diffrent networks trained with diffrent combination of losses and tasks.
 - Column 1 shows the loss used for the network.
-- Columns 2 - 4 show the task that where used doring training (✓ - for using the task, ✗ - for not using the task or number for the task weighting whan a constant weighting parameter was used).
-- Columns 5 - 7 show results for every task.
+- Columns 2 - 4 show the tasks that were used doring training (✓ - for using the task, ✗ - for not using the task or number for the task weighting whan a constant weighting parameter was used).
+- Columns 5 - 7 show results for every task (our results are on the left side of the `/` *paper results are on the right side*).
 
 The table shows the results of 9 netwoks: 
-- 1st - 3rd networks where trained with a single task - Label only (semantic segmantation), Instance only (instance segmantation), Depth only (Depth estimation).
-- 4th - 5th networks where trained with three tasks but with constant weights for every task loss (column 2-4 show the weighting).
-- 6th - 8th networks where trained with two tasks using uncertainty weighting.
-- 9th networkwas trained with three tasks using uncertainty weighting.
+- 1st - 3rd networks were trained with a single task - Label only (semantic segmantation), Instance only (instance segmantation), Depth only (Depth estimation).
+- 4th - 5th networks were trained with three tasks but with constant weights for every task loss (column 2-4 show the weighting).
+- 6th - 8th networks were trained with two tasks using uncertainty weighting.
+- 9th network was trained with three tasks using uncertainty weighting.
+
+
 
 ## Setup
 

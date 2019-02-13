@@ -116,20 +116,34 @@ The instance segmantation decoder produces two channels so that each pixel is a 
 |:-------------------:|:-------------------:|:-------------------:|
 |<img src='images/graphs/label.png' width="280px">|<img src='images/graphs/instance.png' width="280px">|<img src='images/graphs/disp.png' width="280px">|
 
-**Compression to paper quantitative results** <br>
+**Comparison to paper quantitative results** <br>
+
 
 |                            |     |        |      |Label segmentation   |Instance segmentation|       Depth         |
 |----------------------------|:---:|:------:|:----:|:-------------------:|:-------------------:|:-------------------:|
-|loss                        |Label|Instance|Depth |IoU [%]              |RMS error            |RMS error            |
-|Label only                  |V    |X       |X     |43.45/43.1(paper)    |X                    |X                    |
-|Instance only               |X    |V       |X     |X                    |3.4128/4.61(paper)   |X                    |
-|Depth only                  |V    |X       |V     |X                    |X                    |0.7005/0.783(paper)  |
-|Unweighted sum of losses    |0.333|0.333   |0.333 |43.6(paper)          |3.92(paper)          |0.786(paper)         |
-|Approx. optimal weights     |0.8  |0.05    |0.15  |46.3(paper)|3.92(paper)|0.799(paper)|
-|2 task uncertainty weighting|V    |V       |X|42.98/46.5(paper)|3.3185/3.73(paper)|X|
-|2 task uncertainty weighting|V    |X       |V|43.27/46.2(paper)|X|0.7118/0.714(paper)|
-|2 task uncertainty weighting|X    |V       |V|X|3.2853/3.54(paper)|0.7166/0.744(paper)|
-|3 task uncertainty weighting|V    |V       |V|42.87/46.6(paper)|3.3183/3.91(paper)|0.7102/0.702(paper)|
+|loss                        |Label|Instance|Depth |IoU [%](ours/*papers*)|RMS error (ours/*papers*)|RMS error (ours/*papers*)|
+|Label only                  |✓    |✗       |✗     |43.45/*43.1*        |✗                   |✗                    |
+|Instance only               |✗    |✓       |✗     |✗                  |3.4128/*4.61*        |✗                    |
+|Depth only                  |✗    |✗       |✓     |✗                  |✗                    |0.7005/*0.783*       |
+|Unweighted sum of losses    |0.333|0.333    |0.333 |*43.6*              |*3.92*               |*0.786*              |
+|Approx. optimal weights     |0.8  |0.05     |0.15  |*46.3*              |*3.92*               |*0.799*              |
+|2 task uncertainty weighting|✓    |✓       |✗     |42.98/*46.5*        |3.3185/*3.73*        |✗                    |
+|2 task uncertainty weighting|✓    |✗       |✓     |43.27/*46.2*        |✗                   |0.7118/*0.714*        |
+|2 task uncertainty weighting|✗    |✓       |✓     |✗                  |3.2853/*3.54*        |0.7166/*0.744*        |
+|3 task uncertainty weighting|✓    |✓       |✓     |42.87/*46.6*        |3.3183/*3.91*        |0.7102/*0.702*        |
+
+
+Table rows and column explanation: 
+- Rows 4 - 12 show results for diffrent networks trained with diffrent combination of losses and tasks.
+- Column 1 shows the loss used for the network.
+- Columns 2 - 4 show the task that where used doring training (✓ - for using the task, ✗ - for not using the task or number for the task weighting whan a constant weighting parameter was used).
+- Columns 5 - 7 show results for every task.
+
+The table shows the results of 9 netwoks: 
+- 1st - 3rd networks where trained with a single task - Label only (semantic segmantation), Instance only (instance segmantation), Depth only (Depth estimation).
+- 4th - 5th networks where trained with three tasks but with constant weights for every task loss (column 2-4 show the weighting).
+- 6th - 8th networks where trained with two tasks using uncertainty weighting.
+- 9th networkwas trained with three tasks using uncertainty weighting.
 
 ## Setup
 

@@ -45,7 +45,7 @@ The network consisets of an encoder which produce a shared representation and  f
 <img src='images/arc_top.png'>
 
 ### Encoder
-The encoder consisets of a fine tuned pre-trained ResNet 101 v1 with the following chnges:
+The encoder consisets of a fine tuned pre-trained ResNet 101 v1 with the following changes:
 1. Droped the final fully conected layer.
 2. Last layer is resized to 128X256.
 3. used Dilated convolutional approch (atrous convolution).
